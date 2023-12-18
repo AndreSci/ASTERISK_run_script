@@ -11,7 +11,7 @@ LOG_PATH = None  # Возможно указать путь в строке - п
 logger = Logger(log_path=LOG_PATH)
 
 
-def do_request(caller_id, answer_id):
+def do_request(caller_id=205, answer_id=200):
 
     try:
         res = requests.get(f"http://{URL}:{PORT}/"
@@ -40,5 +40,8 @@ def main():
 
 
 if __name__ == "__main__":
-    logger.event(f"Запуск скрипта", print_it=False)
-    main()
+    # logger.event(f"Запуск скрипта", print_it=False)
+    # main()
+
+
+    do_request()
