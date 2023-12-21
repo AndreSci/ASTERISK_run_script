@@ -20,7 +20,8 @@ def do_request(caller_id: int, answer_id: int):
         res = requests.get(f"http://{URL}:{PORT}/"
                            f"action.save?caller_id={caller_id}&answer_id={answer_id}", timeout=2)
 
-        logger.event(f"Результаты запроса: {res}")
+        logger.event(f"Статус запроса: {res}")
+        logger.event(f"Результаты запроса: {res.json()}")
     except Exception as ex:
         logger.exception(f"Исключение вызвало: {ex}")
 
@@ -33,9 +34,9 @@ def main():
         caller_id = sys.argv[1]
         answer_id = sys.argv[2]
 
-        if caller_id != answer_id:
-            logger.event(f"Получены данные: caller_id:{caller_id} - answer_id:{answer_id}")
+        logger.event(f"Получены данные: caller_id:{caller_id} - answer_id:{answer_id}")
 
+        if caller_id != answer_id:
             # Вызываем запрос
             do_request(caller_id, answer_id)
         else:
@@ -44,7 +45,7 @@ def main():
         logger.exception(f"Исключение вызвало: {ex}")
     finally:
         # Сделано для теста в Debug mode.
-        if sys.gettrace() is None:
+        if sys.gettrace() is not None:
             do_request(205, 200)
 
 

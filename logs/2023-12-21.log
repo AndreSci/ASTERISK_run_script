@@ -1,0 +1,70 @@
+2023-12-21/13.20.41	EVENT	do_request	Результаты запроса: <Response [200]>
+2023-12-21/13.27.52	EVENT	do_request	Результаты запроса: <Response [200]>
+2023-12-21/16.41.51	EVENT	<module>	Запуск скрипта
+2023-12-21/16.41.51	EXCEPTION	main	Исключение вызвало: list index out of range - Traceback (most recent call last):
+  File "C:\PYTHON\ASTERISK_script\main.py", line 31, in main
+    caller_id = sys.argv[1]
+IndexError: list index out of range
+
+2023-12-21/16.41.51	EVENT	do_request	Результаты запроса: <Response [200]>
+2023-12-21/16.45.01	EVENT	<module>	Запуск скрипта
+2023-12-21/16.45.01	EXCEPTION	main	Исключение вызвало: list index out of range - Traceback (most recent call last):
+  File "C:\PYTHON\ASTERISK_script\main.py", line 31, in main
+    caller_id = sys.argv[1]
+IndexError: list index out of range
+
+2023-12-21/16.45.01	EVENT	do_request	Результаты запроса: <Response [200]>
+2023-12-21/16.45.16	EVENT	<module>	Запуск скрипта
+2023-12-21/16.45.16	EXCEPTION	main	Исключение вызвало: list index out of range - Traceback (most recent call last):
+  File "C:\PYTHON\ASTERISK_script\main.py", line 31, in main
+    caller_id = sys.argv[1]
+IndexError: list index out of range
+
+2023-12-21/16.45.16	EVENT	do_request	Результаты запроса: <Response [200]>
+2023-12-21/16.46.26	EVENT	<module>	Запуск скрипта
+2023-12-21/16.46.26	EXCEPTION	main	Исключение вызвало: list index out of range - Traceback (most recent call last):
+  File "C:\PYTHON\ASTERISK_script\main.py", line 31, in main
+    caller_id = sys.argv[1]
+IndexError: list index out of range
+
+2023-12-21/16.46.38	EVENT	<module>	Запуск скрипта
+2023-12-21/16.46.38	EXCEPTION	main	Исключение вызвало: list index out of range - Traceback (most recent call last):
+  File "C:\PYTHON\ASTERISK_script\main.py", line 31, in main
+    caller_id = sys.argv[1]
+IndexError: list index out of range
+
+2023-12-21/16.46.38	EVENT	do_request	Результаты запроса: <Response [200]>
+2023-12-21/16.53.37	EVENT	<module>	Запуск скрипта
+2023-12-21/16.53.37	EXCEPTION	main	Исключение вызвало: list index out of range - Traceback (most recent call last):
+  File "C:\PYTHON\ASTERISK_script\main.py", line 34, in main
+    caller_id = sys.argv[1]
+IndexError: list index out of range
+
+2023-12-21/16.53.37	EVENT	do_request	Статус запроса: <Response [200]>
+2023-12-21/16.53.37	EVENT	do_request	Результаты запроса: {'DATA': [{'file_name': 'CAM2-205-20231221165337.jpg'}, {'file_name': 'CAM3-205-20231221165337.jpg'}], 'DESC': '', 'RESULT': 'SUCCESS'}
+2023-12-21/16.54.00	EVENT	<module>	Запуск скрипта
+2023-12-21/16.54.00	EXCEPTION	main	Исключение вызвало: list index out of range - Traceback (most recent call last):
+  File "C:\PYTHON\ASTERISK_script\main.py", line 34, in main
+    caller_id = sys.argv[1]
+IndexError: list index out of range
+
+2023-12-21/16.54.22	EVENT	<module>	Запуск скрипта
+2023-12-21/16.54.22	EXCEPTION	main	Исключение вызвало: list index out of range - Traceback (most recent call last):
+  File "C:\PYTHON\ASTERISK_script\main.py", line 34, in main
+    caller_id = sys.argv[1]
+IndexError: list index out of range
+
+2023-12-21/16.54.44	EVENT	<module>	Запуск скрипта
+2023-12-21/16.54.44	EXCEPTION	main	Исключение вызвало: list index out of range - Traceback (most recent call last):
+  File "C:\PYTHON\ASTERISK_script\main.py", line 34, in main
+    caller_id = sys.argv[1]
+IndexError: list index out of range
+
+2023-12-21/16.54.51	EVENT	<module>	Запуск скрипта
+2023-12-21/16.54.51	EXCEPTION	main	Исключение вызвало: list index out of range - Traceback (most recent call last):
+  File "C:\PYTHON\ASTERISK_script\main.py", line 34, in main
+    caller_id = sys.argv[1]
+IndexError: list index out of range
+
+2023-12-21/16.54.52	EVENT	do_request	Статус запроса: <Response [200]>
+2023-12-21/16.54.52	EVENT	do_request	Результаты запроса: {'DATA': [{'file_name': 'CAM2-205-20231221165451.jpg'}, {'file_name': 'CAM3-205-20231221165452.jpg'}], 'DESC': '', 'RESULT': 'SUCCESS'}
