@@ -68,3 +68,30 @@ IndexError: list index out of range
 
 2023-12-21/16.54.52	EVENT	do_request	Статус запроса: <Response [200]>
 2023-12-21/16.54.52	EVENT	do_request	Результаты запроса: {'DATA': [{'file_name': 'CAM2-205-20231221165451.jpg'}, {'file_name': 'CAM3-205-20231221165452.jpg'}], 'DESC': '', 'RESULT': 'SUCCESS'}
+2023-12-21/17.18.45	EVENT	<module>	Запуск скрипта
+2023-12-21/17.18.45	EXCEPTION	main	Исключение вызвало: list index out of range - Traceback (most recent call last):
+  File "C:\PYTHON\ASTERISK_script\main.py", line 34, in main
+    caller_id = sys.argv[1]
+IndexError: list index out of range
+
+2023-12-21/17.19.00	EVENT	<module>	Запуск скрипта
+2023-12-21/17.19.00	EVENT	main	Получены данные: caller_id:1 - answer_id:1
+2023-12-21/17.19.00	WARNING	main	Звонящий не может быть инициатором нажатия клавиши: 1 == 1
+2023-12-21/17.19.13	EVENT	<module>	Запуск скрипта
+2023-12-21/17.19.13	EVENT	main	Получены данные: caller_id:1 - answer_id:1
+2023-12-21/17.19.13	WARNING	main	Звонящий не может быть инициатором нажатия клавиши: 1 == 1
+2023-12-21/17.19.22	EVENT	<module>	Запуск скрипта
+2023-12-21/17.19.22	EXCEPTION	main	Исключение вызвало: list index out of range - Traceback (most recent call last):
+  File "C:\PYTHON\ASTERISK_script\main.py", line 35, in main
+    answer_id = sys.argv[2]
+IndexError: list index out of range
+
+2023-12-21/17.26.35	EVENT	<module>	Запуск скрипта
+2023-12-21/17.26.35	EVENT	do_request	Статус запроса: <Response [200]>
+2023-12-21/17.26.35	EVENT	do_request	Результаты запроса: {'DATA': [{'file_name': 'CAM2-205-20231221172635.jpg'}, {'file_name': 'CAM3-205-20231221172635.jpg'}], 'DESC': '', 'RESULT': 'SUCCESS'}
+2023-12-21/17.26.42	EVENT	<module>	Запуск скрипта
+2023-12-21/17.26.42	EXCEPTION	main	Исключение вызвало: list index out of range - Traceback (most recent call last):
+  File "C:\PYTHON\ASTERISK_script\main.py", line 38, in main
+    caller_id = sys.argv[1]
+IndexError: list index out of range
+

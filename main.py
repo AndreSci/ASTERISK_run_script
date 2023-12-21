@@ -30,24 +30,23 @@ def do_request(caller_id: int, answer_id: int):
 
 def main():
     try:
-        # Получаем данные от астериск
-        caller_id = sys.argv[1]
-        answer_id = sys.argv[2]
-
-        logger.event(f"Получены данные: caller_id:{caller_id} - answer_id:{answer_id}")
-
-        if caller_id != answer_id:
-            # Вызываем запрос
-            do_request(caller_id, answer_id)
-        else:
-            logger.warning(f"Звонящий не может быть инициатором нажатия клавиши: {caller_id} == {answer_id}")
-    except Exception as ex:
-        logger.exception(f"Исключение вызвало: {ex}")
-    finally:
-        # Нужен ли тут finally? Нет! Но сделал с целью разнообразия...
         # Сделано для теста в Debug mode.
         if sys.gettrace() is not None:
             do_request(205, 200)
+        else:
+            # Получаем данные от астериск
+            caller_id = sys.argv[1]
+            answer_id = sys.argv[2]
+
+            logger.event(f"Получены данные: caller_id:{caller_id} - answer_id:{answer_id}")
+
+            if caller_id != answer_id:
+                # Вызываем запрос
+                do_request(caller_id, answer_id)
+            else:
+                logger.warning(f"Звонящий не может быть инициатором нажатия клавиши: {caller_id} == {answer_id}")
+    except Exception as ex:
+        logger.exception(f"Исключение вызвало: {ex}")
 
 
 if __name__ == "__main__":
