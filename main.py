@@ -44,6 +44,7 @@ def main():
     except Exception as ex:
         logger.exception(f"Исключение вызвало: {ex}")
     finally:
+        # Нужен ли тут finally? Нет! Но сделал с целью разнообразия...
         # Сделано для теста в Debug mode.
         if sys.gettrace() is not None:
             do_request(205, 200)
