@@ -1,3 +1,8 @@
+#Asterisk
+#Python #Python3
+Guide for Asterisk RU version
+These instruction help you connect 2 callers and run python3 script (with params from asterisk)
+
 Инструкция по настройки астериска для вызова python скрипта с параметрами.
 Скрипт предназначен для отправки http запроса на указанный сервер.
 

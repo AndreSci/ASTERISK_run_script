@@ -1,3 +1,4 @@
+# Author AndreSci
 import threading
 import os
 import datetime
@@ -111,6 +112,12 @@ class Logger(metaclass=SingletonBaseClass):
         code_obj_name = code_obj.co_name
 
         return self.add_log(f"{type_mess}\t{code_obj_name}\t{text}", print_it)
+
+    def info(self, text: str, print_it=True):
+        """ Метод изменяет текст в стандартный стиль """
+        # возьми текущий фрейм объект (frame object)
+        current_frame = inspect.currentframe()
+        return self.__rebuild_msg(text, print_it, "INFO", current_frame)
 
     def event(self, text: str, print_it=True):
         """ Метод изменяет текст в стандартный стиль """
