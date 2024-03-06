@@ -1,0 +1,9 @@
+2024-03-06/17.19.44	EVENT	<module>	Запуск скрипта
+2024-03-06/17.19.44	EXCEPTION	main	Исключение вызвало: list index out of range - Traceback (most recent call last):
+  File "C:\PYTHON\ASTERISK_script\main.py", line 46, in main
+    caller_id = sys.argv[1]
+IndexError: list index out of range
+
+2024-03-06/17.23.48	EVENT	<module>	Запуск скрипта
+2024-03-06/17.23.48	EVENT	main	Получены данные: caller_id:200 - answer_id:300
+2024-03-06/17.23.48	EVENT	main	{'RESULT': 'SUCCESS', 'STATUS_CODE': 200, 'DESC': '', 'DATA': {'DATA': {}, 'DESC': '', 'RESULT': 'ERROR'}}
